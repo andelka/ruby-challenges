@@ -1,12 +1,11 @@
 # Numerology App
-puts "Please, enter your date of birth in the format DDMMYYYY."
+puts 'Please, enter your date of birth in the format DDMMYYYY.'
 birthdate = gets.chomp
 number = birthdate[0].to_i + birthdate[1].to_i + birthdate[2].to_i + birthdate[3].to_i + birthdate[4].to_i + birthdate[5].to_i + birthdate[6].to_i + birthdate[7].to_i
 number = number.to_s
 number = number[0].to_i + number[1].to_i
-if number > 9
-    number = number[0].to_i + number[1].to_i
-end
+number = number[0].to_i + number[1].to_i if number > 9
+
 case number
 when 1 then puts "Number 1:\nOne is the leader. The number one indicates the ability to stand alone, and is a strong vibration. Ruled by the Sun."
 when 2 then puts "Number 2:\nThis is the mediator and peace-lover. The number two indicates the desire for harmony. It is a gentle, considerate, and sensitive vibration. Ruled by the Moon."

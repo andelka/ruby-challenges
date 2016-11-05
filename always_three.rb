@@ -1,4 +1,4 @@
-puts "Give me a number!"
+puts 'Give me a number!'
 number_1 = gets.to_i
 number_2 = number_1 + 5
 number_2 *= 2
